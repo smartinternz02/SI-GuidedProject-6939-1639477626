@@ -1,0 +1,7 @@
+var d=msg.payload.date
+var t=msg.payload.time
+msg.payload = {
+    "_id":d+" "+t,
+    "name":msg.payload.name
+}
+return msg;
